@@ -1,0 +1,29 @@
+Prefix: 58.138.96/23 Address Count: 510 Address Count Raw: 512
+Prefix: 129.250.0/24 Address Count: 254 Address Count Raw: 256
+Prefix: 129.250.24/23 Address Count: 510 Address Count Raw: 512
+Prefix: 129.250.29/24 Address Count: 254 Address Count Raw: 256
+Prefix: 129.250.38/24 Address Count: 254 Address Count Raw: 256
+Prefix: 129.250.43/24 Address Count: 254 Address Count Raw: 256
+Prefix: 129.250.120/24 Address Count: 254 Address Count Raw: 256
+Prefix: 129.250.160/24 Address Count: 254 Address Count Raw: 256
+Prefix: 202.232.1/24 Address Count: 254 Address Count Raw: 256
+Prefix: 202.232.4/24 Address Count: 254 Address Count Raw: 256
+Prefix: 203.180.66/24 Address Count: 254 Address Count Raw: 256
+Prefix: 204.42.111/24 Address Count: 254 Address Count Raw: 256
+Prefix: 210.130.3/24 Address Count: 254 Address Count Raw: 256
+Prefix: 210.130.4/23 Address Count: 510 Address Count Raw: 512
+Prefix: 210.130.6/24 Address Count: 254 Address Count Raw: 256
+Prefix: 210.130.130/24 Address Count: 254 Address Count Raw: 256
+Prefix: 210.130.138/24 Address Count: 254 Address Count Raw: 256
+Prefix: 210.130.160/24 Address Count: 254 Address Count Raw: 256
+Prefix: 210.130.162/23 Address Count: 510 Address Count Raw: 512
+Prefix: 210.130.199/24 Address Count: 254 Address Count Raw: 256
+Prefix: 210.138.28/24 Address Count: 254 Address Count Raw: 256
+Prefix: 210.138.30/24 Address Count: 254 Address Count Raw: 256
+Prefix: 210.138.33/24 Address Count: 254 Address Count Raw: 256
+Prefix: 210.138.77/24 Address Count: 254 Address Count Raw: 256
+Prefix: 210.138.114/24 Address Count: 254 Address Count Raw: 256
+Prefix: 216.98.96/24 Address Count: 254 Address Count Raw: 256
+Prefix: 216.98.98/24 Address Count: 254 Address Count Raw: 256
+Total Addresses: 7882
+Total Raw Addresses: 7936
