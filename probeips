@@ -1,0 +1,22 @@
+#!/bin/bash
+
+PREFIXES=`cat aggregatedPrefixes.txt | cut -d" " -f2 | grep "\."`
+IP_LIST_FILE=ipList.txt
+PREFIX_FILE=prefixList.txt
+DEBUG_FILE=debug
+SCAMPY_OUTPUT=pingResults
+WART2JSON=../../src/scamper-cvs-20141101/utils/sc_warts2json/sc_warts2json
+CREATE_IP_LIST=./createiplist.py
+PARSE_PING_RESULTS=./parsePingResults.py
+JSON_SCAMPY_OUTPUT=${SCAMPY_OUTPUT}.json
+
+echo ${PREFIXES[*]} > $PREFIX_FILE
+
+#$CREATE_IP_LIST < $PREFIX_FILE | shuf > $IP_LIST_FILE 
+echo "10.0.0.0/24" | $CREATE_IP_LIST | shuf >  $IP_LIST_FILE
+
+scamper -c "ping -P udp" -d $DEBUG_FILE -o $SCAMPY_OUTPUT -f $IP_LIST_FILE -O warts -p 2
+
+$WART2JSON $SCAMPY_OUTPUT > $JSON_SCAMPY_OUTPUT
+
+$PARSE_PING_RESULTS 
