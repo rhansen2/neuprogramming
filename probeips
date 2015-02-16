@@ -12,8 +12,8 @@ JSON_SCAMPY_OUTPUT=${SCAMPY_OUTPUT}.json
 
 echo ${PREFIXES[*]} > $PREFIX_FILE
 
-#$CREATE_IP_LIST < $PREFIX_FILE | shuf > $IP_LIST_FILE 
-echo "10.0.0.0/24" | $CREATE_IP_LIST | shuf >  $IP_LIST_FILE
+$CREATE_IP_LIST < $PREFIX_FILE | shuf > $IP_LIST_FILE 
+#echo "10.0.0.0/24" | $CREATE_IP_LIST | shuf >  $IP_LIST_FILE
 
 scamper -c "ping -P udp" -d $DEBUG_FILE -o $SCAMPY_OUTPUT -f $IP_LIST_FILE -O warts -p 2
 
